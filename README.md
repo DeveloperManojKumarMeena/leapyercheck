@@ -44,15 +44,15 @@ A year is considered a **leap year** if:
 
 ### Formula Used:
 ```js
-(year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)
+const year = Number(prompt("Enter a year to check leap or not"))
 
----
-
-If you want, I can also:
-- Generate **HTML/CSS/JS code**
-- Simplify this README for beginners
-- Add screenshots section
-- Customize it for **college submission or GitHub**
-
-Just tell me.
+if(year%4==0 && year%100==0){
+    if(year%400==0){
+        console.log(year + " is a Leap year")
+    }else{
+        console.log(year+" is not a leap year")
+    }
+}else if(year%4==0){
+    console.log(year + " is a leap year")
+}else console.log(year +" is not a leap year")
 
