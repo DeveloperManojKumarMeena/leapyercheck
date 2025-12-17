@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leap Year Checker</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Leap Year Checker</h1>
+
+        <form id="leapForm" class="card" aria-label="Leap year checker">
+            <label for="yearInput" class="label">Enter a year</label>
+            <input id="yearInput" name="year" type="number" inputmode="numeric" placeholder="e.g. 2024" min="0" required>
+
+            <div class="actions">
+                <button type="submit" id="checkBtn" class="btn">Check</button>
+                <button type="button" id="clearBtn" class="btn alt">Clear</button>
+            </div>
+
+            <div id="result" class="result" role="status" aria-live="polite"></div>
+        </form>
+
+        <p class="hint">Tip: Leap years are divisible by 4, but years divisible by 100 are not leap years unless divisible by 400.</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
